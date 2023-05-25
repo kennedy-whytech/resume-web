@@ -1,0 +1,125 @@
+/* Fade-in and Fade-out animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+.fade-out {
+  opacity: 1;
+  animation: fadeOut ease-out 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Hover effect */
+.hover-effect {
+  transition: transform .2s;
+}
+
+.hover-effect:hover {
+  transform: scale(1.05);
+}
+
+/* Highlight selected section */
+.selected {
+  background-color: #f0f0f0;
+}
+/* Sidebar styling */
+.sidebar {
+  width: 300px; /* Set the default width */
+  height: 100%; /* Set the default height */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 100%; /* Set full width on smaller screens */
+    height: auto; /* Allow the height to adjust to the content */
+  }
+}
+
+.list-item:hover {
+  font-size: 1.1em;
+}
+
+/* Style for section headers */
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+/* Style for section content */
+section {
+  margin-bottom: 10px;
+}
+
+/* Style for list items */
+.list-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Style for sidebar items */
+.sidebar-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style for hovered list items */
+.list-item:hover {
+  background-color: #f5f5f5;
+}
+
+/* Style for hovered sidebar items */
+.sidebar-item:hover {
+  background-color: #f5f5f5;
+}
+
+/* Style for active sidebar items */
+.sidebar-item.active {
+  background-color: #eee;
+}
+
+
+section {
+  padding-top: 70px;
+}
+
+
+body > *:last-child {
+  margin-bottom: 500px;
+}
+
+.fa-linkedin {
+  margin-top: 30%;
+  color: #0077b5;
+}
+
+.added {
+  color: rgb(124, 207, 0);
+}
